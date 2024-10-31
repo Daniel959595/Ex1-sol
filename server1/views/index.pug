@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Calculate Product
+    link(rel="stylesheet" href="/styles.css")
+  body
+    .container
+      h1 Calculate Product
+      form(action="/calculate-product" method="get")
+        input(type="number" name="number1" placeholder="Enter first number" required)
+        input(type="number" name="number2" placeholder="Enter second number" required)
+        button(type="submit") Calculate
+      if result
+        p= result
